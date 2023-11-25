@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             name.setText(personName);
         }
 
-        ApiClient.getService().getList("the", "newest", "books", "paid-ebooks", 34, 0, "AIzaSyBpaoP1tCtTtXe6kuc8-TfqC3JCALyxbf4")
+        ApiClient.getService().getList("the", "newest", "books", "paid-ebooks", 34, 0, "API_KEY")
                 .enqueue(new Callback<ListUserResponse>() {
                     @Override
                     public void onResponse(Call<ListUserResponse> call, Response<ListUserResponse> response) {
