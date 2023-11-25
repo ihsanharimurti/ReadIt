@@ -1,0 +1,148 @@
+<!-- This is a sample layout for the ProfileFragment -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <!-- Profile Image -->
+
+    <!-- User Name -->
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@color/white">-->
+<!--        -->
+<!--    </ImageView>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:background="#00FFFFFF"
+        >
+    </Button>
+
+    <TextView
+        android:fontFamily="@font/quicksand_bold"
+        android:id="@+id/tv_profile_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Profile Page"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/placeholder_image"
+        app:civ_border_color="@color/orange1"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/text_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="namamu"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <!-- User Email -->
+    <TextView
+        android:id="@+id/text_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_name"
+        android:layout_centerHorizontal="true"
+        android:text="doe@gmail.com"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <!-- Logout Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        app:backgroundTint="@color/orange1"
+        android:text="Logout" />
+
+    <include layout="@layout/layout_bottom_bar" />
+
+<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--        android:id="@id/bottomAppBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:fabAlignmentMode="center"-->
+<!--        app:fabCradleMargin="10dp"-->
+<!--        app:fabCradleRoundedCornerRadius="5dp"-->
+<!--        app:fabCradleVerticalOffset="5dp"-->
+<!--        app:backgroundTint="@color/orange1"-->
+<!--        tools:ignore="BottomAppBar">-->
+
+<!--        &lt;!&ndash; Customize the BottomAppBar according to your needs &ndash;&gt;-->
+<!--        &lt;!&ndash; FloatingActionButton 1 &ndash;&gt;-->
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@id/home_appbar"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srcCompat="@drawable/baseline_home_24"-->
+<!--            android:outlineAmbientShadowColor="@color/orange1"-->
+<!--            android:outlineSpotShadowColor="@color/orange1"-->
+<!--            app:rippleColor="@color/orange1"-->
+<!--            app:backgroundTint="@color/orange1"-->
+<!--            app:tint="@color/white"-->
+<!--            android:contentDescription="Home"/>-->
+
+<!--        &lt;!&ndash; FloatingActionButton 2 &ndash;&gt;-->
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@id/bookmark_appbar"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="40dp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            app:srcCompat="@drawable/baseline_bookmark_24"-->
+<!--            android:outlineAmbientShadowColor="@color/orange1"-->
+<!--            android:outlineSpotShadowColor="@color/orange1"-->
+<!--            app:rippleColor="@color/orange1"-->
+<!--            app:backgroundTint="@color/orange1"-->
+<!--            app:tint="@color/white"-->
+<!--            android:contentDescription="Icon 2"/>-->
+
+<!--        &lt;!&ndash; FloatingActionButton 3 &ndash;&gt;-->
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@id/profile_appbar"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srcCompat="@drawable/baseline_person_white_24"-->
+<!--            android:outlineAmbientShadowColor="@color/orange1"-->
+<!--            android:outlineSpotShadowColor="@color/orange1"-->
+<!--            app:rippleColor="@color/orange1"-->
+<!--            app:backgroundTint="@color/orange1"-->
+<!--            app:tint="@color/white"-->
+<!--            android:contentDescription="Icon 3"/>-->
+
+
+<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<!-- layout_top_app_bar.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Your top bar content here -->
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="5dp"
+        app:fabCradleVerticalOffset="5dp"
+        app:backgroundTint="@color/orange1"
+        app:contentInsetStart="0dp"
+        tools:ignore="BottomAppBar">
+
+        <!-- FloatingActionButton 1 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/home_appbar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_home_24"
+            android:outlineAmbientShadowColor="@color/orange1"
+            android:outlineSpotShadowColor="@color/orange1"
+            app:rippleColor="@color/orange1"
+            app:backgroundTint="@color/orange1"
+            app:tint="@color/white"
+            android:contentDescription="Home"/>
+
+        <!-- FloatingActionButton 2 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/bookmark_appbar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            app:srcCompat="@drawable/baseline_star_24"
+            android:outlineAmbientShadowColor="@color/orange1"
+            android:outlineSpotShadowColor="@color/orange1"
+            app:rippleColor="@color/orange1"
+            app:backgroundTint="@color/orange1"
+            app:tint="@color/white"
+            android:contentDescription="Icon 2"/>
+
+        <!-- FloatingActionButton 3 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/profile_appbar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            app:srcCompat="@drawable/baseline_person_white_24"
+            android:outlineAmbientShadowColor="@color/orange1"
+            android:outlineSpotShadowColor="@color/orange1"
+            app:rippleColor="@color/orange1"
+            app:backgroundTint="@color/orange1"
+            app:tint="@color/white"
+            android:contentDescription="Icon 3"/>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</RelativeLayout>
