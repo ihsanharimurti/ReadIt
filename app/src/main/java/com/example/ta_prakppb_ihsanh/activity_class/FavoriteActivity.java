@@ -68,7 +68,7 @@ public class FavoriteActivity extends AppCompatActivity {
 
 
 
-        ApiClient.getService().getList("a", "relevance", "books", "paid-ebooks", 34, 0, "AIzaSyBpaoP1tCtTtXe6kuc8-TfqC3JCALyxbf4")
+        ApiClient.getService().getList("a", "relevance", "books", "paid-ebooks", 34, 0, "API_KEY")
                 .enqueue(new Callback<ListUserResponse>() {
                     @Override
                     public void onResponse(Call<ListUserResponse> call, Response<ListUserResponse> response) {
